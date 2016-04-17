@@ -1,98 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
+---
+layout: contact
+title: Contact
+permalink: /contact/
+---
 
-<!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Andrew Tsang</title>
-		<!-- Dont look at my shitty code :)  -->
+<div id="contactwrap"></div>
 
-<!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/styles.css?v=1.2" rel="stylesheet">
-		<link href="css/queries.css?v=1.2" rel="stylesheet">
-		<link rel="stylesheet" href="css/flexslider.css?v=1.2" type="text/css">
-		<link rel="stylesheet" href="css/animate.css" type="text/css">
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/gallery.theme.css">
-		<!-- <link rel="stylesheet" href="css/gallery.min.css"> -->
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-8">
+            <h4>Just Get In Touch!</h4>
+            <div class="hline"></div>
+                <p>{{ site.about }}</p>
+                <form role="form">
+                  <div class="form-group">
+                    <label for="InputName1">Your Name</label>
+                    <input type="text" class="form-control" id="exampleInputName1">
+                  </div>
+                  <div class="form-group">
+                    <label for="InputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                  </div>
+                  <div class="form-group">
+                    <label for="InputSubject1">Subject</label>
+                    <input type="text" class="form-control" id="exampleInputSubject1">
+                  </div>
+                  <div class="form-group">
+                    <label for="message1">Message</label>
+                    <textarea class="form-control" id="message1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-theme">Submit</button>
+                </form>
+        </div><! --/col-lg-8 -->
 
-<!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  		<link rel="icon" type="img/x-icon" href="img/favicon.ico" />
-		
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="responsive-logo"></div>
-					<div class="pullcontainer">
-						<a href="#" id="pull"><i class="fa fa-bars fa-2x"></i></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<nav>
-							<!-- <div class="logo-holder"></div> -->
-							<ul class="clearfix">
-							<div class="header"><a href="index.html">ANDREW TSANG</div>
-							<!-- <li class="cv"><a href="contact.html">Contact</a></li> -->
-								<li class="cv"><a href="AndrewTsang-CV.pdf" target="blank">cv</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-
-
-
-			<!-- <div class="hero"></div> -->
-		</header>
-
-
-
-		<footer id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 footer-leftcol">
-					<div class="icon"></div>
-
-						<p><span class="bold-16p">Andrew Tsang</span><br>
-								email: atsanger@gmail.com<br>
-								<a href="https://ca.linkedin.com/in/tsangdesign">linkedin</a>
-								<br>
-						<a href="https://instagram.com/zeeber/">instagram</a>
-						</p>
-					</div>
-					<!-- <div class="col-md-4 footer-midcol">
-						<ul>
-							<li><a href="#" class="twitter-icon">Twitter</a></li>
-							<li><a href="#" class="facebook-icon">Facebook</a></li>
-							<li><a href="#" class="pintrest-icon">Pintrest</a></li>
-						</ul>
-						<div class="clearfix"></div>
-					</div> -->
-					
-				</div>
-			</div>
-		</footer>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.flexslider.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/waypoints.min.js"></script>
-	</body>
-</html>
+        <div class="col-lg-4">
+            <h4>Our Address</h4>
+            <div class="hline"></div>
+                <p>
+                    {% for line in site.address.first.lines %}
+                        {{ line }} <br>
+                    {% endfor %}
+                </p>
+                <p>
+                    Email: {{ site.email }}<br/>
+                    Tel: {{ site.tel }}
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div><! --/row -->
+</div><! --/container -->
