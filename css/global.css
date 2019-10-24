@@ -1,5 +1,5 @@
 h1 {
-  font-size: 70px !important;
+  font-size: 50px !important;
 }
 body {
   font-family: "proxima-nova" !important;
@@ -54,8 +54,10 @@ a[aria-expanded="true"]{
 }
 
 .type-container {
+  /* color: white; */
   height: 720px;
   display: flex;
+  /* background-color: #2C303A; */
 }
 
 @media (max-width: 768px) {
@@ -67,9 +69,10 @@ a[aria-expanded="true"]{
 .type-layout {
   /* padding: 100px 0; */
   align-self: center;
+  margin: 0 80px;
 }
 
-#bold {
+#light {
   /* padding: 30px; */
   font-family: proxima-nova, sans-serif;
   font-style: normal;
@@ -112,7 +115,7 @@ a[aria-expanded="true"]{
   font-weight: 400;
 }
 
-#light {
+#bold {
   /* font-size: 20px; */
   font-size: calc(3em + 1vw);
   /* font-size: calc(60px + 1vw); */
@@ -141,4 +144,31 @@ a[aria-expanded="true"]{
   font-style: italic;
   font-weight: 200;
   font-size: 30px;
+}
+
+.rebrand {
+  margin: 200px 0;
+}
+
+.rebrand-header {
+  font-size: 60px;
+  line-height: 80px;
+  margin-right: 20px;
+  font-weight: 800;
+  color: #424242;
+}
+
+.rebrand-text {
+  font-size: 20px;
+  color: #424242;
+}
+
+.image-flex {
+  margin-top: 120px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.image-flex img{
+  padding-right: 15px;
 }
