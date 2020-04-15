@@ -110,6 +110,7 @@ div.slides {
   height: 475px;
   position: relative;
   cursor: pointer;
+  width: 400px;
 }
 
 div.slides img {
@@ -127,4 +128,26 @@ div.slides img:first-child {
 
 div.slides:hover img {
   /* box-shadow: 0 0 10px rgba(0,0,0,0.1) */
+}
+
+div.smile {
+  position: absolute;
+  z-index: 100;
+  width: 100px;
+  right: -50px;
+  bottom: 170px;
+  animation: spin infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.smile img{
+  width: 100px;
 }
