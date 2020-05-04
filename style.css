@@ -107,10 +107,9 @@ a.button {
 }
 
 div.slides {
-  height: 475px;
   position: relative;
   cursor: pointer;
-  width: 400px;
+  height: 500px;
 }
 
 div.slides img {
