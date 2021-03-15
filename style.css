@@ -134,8 +134,8 @@ div.smile {
   z-index: 100;
   width: 100px;
   right: -40px;
-  bottom: 150px;
-  animation: spin infinite;
+  bottom: 220px;
+  /* animation: spin infinite; */
 }
 
 
@@ -154,10 +154,10 @@ div.smile {
 }
 
 div.smile img{
-  width: 120px;
-  -webkit-animation: spin 10s linear infinite;
+  width: 160px;
+  /* -webkit-animation: spin 10s linear infinite;
   -moz-animation: spin 10s linear infinite;
   -ms-animation: spin 10s linear infinite;
   -o-animation: spin 10s linear infinite;
-  animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite; */
 }
